@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Color variables for CSS custom properties */
+    --primary: #2b8cee;
+    --primary-hover: #1E7CE5;
+    --primary-light: rgba(43, 140, 238, 0.1);
+    --background: #FFFFFF;
+    --background-light: #f6f7f8;
+    --background-signup: rgba(43, 140, 238, 0.1);
+    --background-secondary: #F5F7FA;
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --text-muted: #9CA3AF;
+    --border: #E5E7EB;
+    --success: #10B981;
+    --error: #EF4444;
+  }
+}
+
+@layer components {
+  /* Typography utilities */
+  .heading-large {
+    @apply text-[32px] font-bold leading-tight tracking-[-0.02em];
+  }
+
+  .heading-medium {
+    @apply text-2xl font-bold leading-snug;
+  }
+
+  .heading-small {
+    @apply text-xl font-semibold leading-snug;
+  }
+
+  .body-large {
+    @apply text-base font-normal leading-normal;
+  }
+
+  .body-medium {
+    @apply text-sm font-normal leading-normal;
+  }
+
+  .body-small {
+    @apply text-xs font-normal leading-normal;
+  }
+
+  .label-text {
+    @apply text-sm font-medium leading-snug;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
